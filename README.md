@@ -17,6 +17,9 @@ This value is to turn on and off the connected electronic equipment. In this cod
 
 Client Arduino will connect to the electronic equipment through relay in the future or at the end.
 
+I've used many library files and modified the code from the github and stackoverflow.
+
+
 ## Server
 
 void setup(): setting up AP, TCP server (8090 port), pin mode.
