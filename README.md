@@ -32,6 +32,8 @@ void closeConnection(int connectionId): close connection
 
 void showData(int connectionId, String result): it will respond String variable to connected device.
 
+void getJoinedIP(int connectionId): This will return a list of IP of connected devices. (ServerIP:ServerPort/?mode=1)
+
 void changeStatus(int connectionId): to change the status of client. 
 (ServerIP:ServerPort/?mode=2&ip=ClientIP&power=[0/1])
 
