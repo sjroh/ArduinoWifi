@@ -18,9 +18,31 @@ This value is to turn on and off the connected electronic equipment. In this cod
 Client Arduino will connect to the electronic equipment through relay in the future or at the end.
 
 ## Server
-<code>
-setup(): setting up AP, TCP server (8090 port), pin mode.
-oneSec(): turn on LED one second and turn off.
-loop(): will recieve packets from other devices including Client Arduino.
-returnStatus(int connectionId):
-</code>
+
+void setup(): setting up AP, TCP server (8090 port), pin mode.
+
+void oneSec(): turn on LED one second and turn off.
+
+void loop(): will recieve packets from other devices including Client Arduino.
+
+void returnStatus(int connectionId): it will run when the Client Arduino requested the on/off value.
+(ServerIP:ServerPort/?mode=3&ip=ClientIP)
+
+void closeConnection(int connectionId): close connection
+
+void showData(int connectionId, String result): it will respond String variable to connected device.
+
+void changeStatus(int connectionId): to change the status of client. 
+(ServerIP:ServerPort/?mode=2&ip=ClientIP&power=[0/1])
+
+void addToClientList(String target, int power): target is a given client IP. It will add client IP and power status into the vector variable.
+
+String sendData(String command, const int timeout, boolean debug): It will send AT command to esp8266 chipset.
+
+## Client
+
+void setup(): Setting up client and join Server AP.
+
+void loop(): Keep checking Server Arduino to turn on and off the LED (or else).
+
+String sendData(String command, const int timeout, boolean debug): It will send AT command to esp8266 chipset.
