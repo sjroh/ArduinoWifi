@@ -16,3 +16,11 @@ In this program, Client Arduino will connect to Server Arduino to regularly chec
 This value is to turn on and off the connected electronic equipment. In this code, it will turn on and off connected LED on pin 13.
 
 Client Arduino will connect to the electronic equipment through relay in the future or at the end.
+
+## Server
+<code>
+setup(): setting up AP, TCP server (8090 port), pin mode.
+oneSec(): turn on LED one second and turn off.
+loop(): will recieve packets from other devices including Client Arduino.
+returnStatus(int connectionId):
+</code>
