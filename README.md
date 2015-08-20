@@ -3,7 +3,8 @@
 This project was part of my team project which named "Home Remote Control".
 
 Basic concept of this project was like below.
-<img src="https://github.com/sjroh/ArduinoWifi/blob/master/images/diagram.png" alt="Simple diagram of this project" width="300px" />
+
+<img src="https://github.com/sjroh/ArduinoWifi/blob/master/images/diagram.png" alt="Simple diagram of this project"/>
 
 This git is have the code for inside of blue box from the diagram.
 
